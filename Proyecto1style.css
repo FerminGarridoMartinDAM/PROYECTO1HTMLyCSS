@@ -205,7 +205,7 @@ body main tr .oro:before {
 }
 
 /*  Biografia */
-main  [id="mainbiografia"] {
+main[id="mainbiografia"] {
   background: linear-gradient(
     to right,
     rgba(0, 234, 255, 0.274),
