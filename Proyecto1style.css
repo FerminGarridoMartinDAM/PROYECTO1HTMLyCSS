@@ -76,10 +76,10 @@ header nav a:visited {
 
 /* Main */
 
-main div {
+main div[class="video"] {
   display: flex;
   justify-content: center;
-  background-color: bisque;
+  background-color: rgb(213, 188, 158);
   align-items: center;
 }
 main div #videomejoresmomentos {
@@ -142,17 +142,29 @@ main nav ul li:hover {
 
 /* Intro */
 
+section[id="intro"]{
+   background: linear-gradient(to bottom, red, yellow, red);
+}
+
 .Bold {
   font-weight: bold;
 }
 
-body main table {
-  width: 30%; /* Ancho completo de la tabla */
-  border-collapse: collapse; /* Bordes colapsados */
-  margin-bottom: 20px; /* Espacio inferior */
+body main caption {
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
-body main table th, td {
+body main table {
+  border-collapse: collapse; /* Bordes colapsados */
+  margin-bottom: 20px; /* Espacio inferior */
+  margin: 0 auto;
+  width: 50%; /* O el ancho que desees */
+}
+
+body main table th,
+td {
   border: 1px solid #ddd; /* Borde de 1px sólido */
   padding: 8px; /* Espaciado interno */
   text-align: center; /* Alineación del texto */
@@ -161,18 +173,20 @@ body main table th, td {
 body main table th[class="seccionestabla"] {
   background-color: #f2f2f2; /* Color de fondo para la cabecera */
 }
+body main table th[class="otrostorneos"] {
+  background-color: rgba(128, 128, 128, 0.476);
+}
 
-body main table tr #olimpico:after , #olimpico:before{
+body main table tr #olimpico:after,
+#olimpico:before {
   content: url("assests/Aros_olimpicos.webp");
   width: 2rem;
   height: 2rem;
 }
 
-
-
 body main tr .oro:before {
-  content: url("assests/Medallaoro.png");
-  width: 1em;
-  height: 1em;
-
+  content: url(assests/Gold_medal.ico);
+  font-size: 0.5rem;
 }
+
+
