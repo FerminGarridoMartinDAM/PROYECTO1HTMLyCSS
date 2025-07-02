@@ -279,3 +279,79 @@ body main p span[class="imagen-oculta"] {
   padding: 5px; /* Espacio alrededor de la imagen */
   background-color: white; /* Fondo blanco */
 }
+
+/* Palmares */
+
+main[id="palmares"] {
+  background: linear-gradient(
+    to right,
+    rgba(0, 234, 255, 0.274),
+    rgba(255, 72, 0, 0.818)
+  );
+}
+
+main[id="palmares"] li {
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+main[id="palmares"] a:visited {
+  color: blueviolet;
+}
+
+#palmares .titulolistapalmares {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+li[class="oroolimpico"]:before {
+  content: url("assests/Gold_medal.ico");
+  font-size: 0.2rem;
+}
+
+li[class="oronormal"]:before {
+  content: url("assests/medallaoronormal.webp");
+  font-size: 0.2rem;
+}
+
+#posicionli {
+  overflow: auto; /* o hidden */
+}
+
+#listapalmares {
+  width: 50%;
+  float: left;
+}
+
+.fondocarruselimagenes {
+  float: right;
+  width: 50%;
+  height: 500px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  animation: slide 20s infinite; /* Cambia 20s para la duración */
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("assests/RafaNadalPalmares.jpeg");
+  }
+  25% {
+    background-image: url("assests/Rafanadalpalmares1.jpeg");
+  }
+  50% {
+    background-image: url("assests/RafaNadalPalmares2.jpeg");
+  }
+  75% {
+    background-image: url("assests/RafaNadalPalmares4.jpeg");
+  }
+  100% {
+    background-image: url("assests/RafaNadalPalmares5.jpeg");
+  }
+}
